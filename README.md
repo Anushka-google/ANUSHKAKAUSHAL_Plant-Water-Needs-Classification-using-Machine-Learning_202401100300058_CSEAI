@@ -1,0 +1,2 @@
+# ANUSHKAKAUSHAL_Plant-Water-Needs-Classification-using-Machine-Learning_202401100300058_CSEAI
+This project uses machine learning to predict the water requirements of different plant species based on environmental features such as sunlight exposure, soil type, and watering frequency. By training a Random Forest Classifier on a structured dataset, the model classifies plants into water need categories (e.g., low, medium, high). 
