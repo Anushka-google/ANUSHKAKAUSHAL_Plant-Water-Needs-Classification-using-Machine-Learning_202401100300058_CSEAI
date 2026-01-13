@@ -1,22 +1,38 @@
-# Plant Water Needs Classification
+Plant Water Needs Classification
 
-A supervised machine learning model to classify plant water requirements using environmental features.
+This project presents a supervised machine learning model that predicts plant water requirements based on environmental conditions.
 
-## Features
-- sunlight_hours
-- watering_freq_per_week
-- soil_type
+The model classifies plants into different water-need categories using structured tabular data.
 
-## Model
-- Random Forest Classifier
-- Train/Test split: 80/20
-- Scaling: StandardScaler
+Problem Statement
 
-## Results
-| Metric | Value |
-|-------|------|
-| Accuracy | 0.25 |
+Efficient irrigation is essential for sustainable agriculture.
+Incorrect watering leads to poor crop health and wastage of water resources.
 
-## How to Run
-pip install -r requirements.txt  
-python src/train.py
+This project aims to classify plant water needs using measurable environmental parameters.
+
+Dataset Features
+Feature	Description
+sunlight_hours	Daily sunlight exposure
+watering_freq_per_week	Weekly watering frequency
+soil_type	Type of soil
+water_need	Target label (Low / Medium / High)
+Machine Learning Approach
+
+Label Encoding for categorical features
+
+Feature scaling using StandardScaler
+
+SMOTE for class balancing
+
+XGBoost Classifier for training
+
+Model Configuration
+Parameter	Value
+Algorithm	XGBoost
+Train/Test Split	80 / 20
+Scaling	StandardScaler
+Oversampling	SMOTE
+Model Performance
+Metric	Value
+Accuracy	~0.60 – 0.80
